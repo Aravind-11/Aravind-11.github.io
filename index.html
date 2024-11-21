@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Your Portfolio</title>
+    <!-- Tailwind CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <style>
+        .gradient-animate {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .project-card {
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -25,84 +52,107 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-20 bg-white">
+    <section class="pt-16 gradient-animate">
         <div class="max-w-6xl mx-auto px-4 py-20 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
                 Welcome to My Portfolio
             </h1>
-            <p class="text-xl text-gray-600 mb-8">
+            <p class="text-xl text-white mb-8">
                 Developer | Creator | Innovator
             </p>
-            <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+            <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition duration-300">
                 Get in Touch
             </a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">About Me</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="text-xl font-semibold mb-4">My Background</h3>
-                    <p class="text-gray-600">
-                        Share your story, experience, and what drives you. This is your chance to connect with your audience on a personal level.
-                    </p>
-                </div>
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="text-xl font-semibold mb-4">My Skills</h3>
-                    <ul class="space-y-2 text-gray-600">
-                        <li>💻 Web Development</li>
-                        <li>🎨 UI/UX Design</li>
-                        <li>📱 Mobile Development</li>
-                        <li>🚀 Cloud Services</li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">My Projects</h2>
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Featured Projects</h2>
             <div class="grid md:grid-cols-3 gap-6">
+                
                 <!-- Project 1 -->
-                <div class="bg-white rounded-lg shadow overflow-hidden">
-                    <img src="/api/placeholder/400/300" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden" style="transform: translateZ(0);">
+                    <div style="background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); height: 12rem;" class="flex items-center justify-center">
+                        <i class="fas fa-shopping-cart text-6xl text-white"></i>
+                    </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+                        <div class="absolute top-4 right-4 bg-blue-500 text-white px-2 py-1 rounded text-sm">
+                            Featured
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">E-Commerce Platform</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span style="background-color: #e3f2fd; color: #1e88e5;" class="px-2 py-1 rounded-full text-sm">React</span>
+                            <span style="background-color: #e8f5e9; color: #43a047;" class="px-2 py-1 rounded-full text-sm">Node.js</span>
+                            <span style="background-color: #f3e5f5; color: #8e24aa;" class="px-2 py-1 rounded-full text-sm">MongoDB</span>
+                        </div>
                         <p class="text-gray-600 mb-4">
-                            Description of your first project. What problems did it solve? What technologies did you use?
+                            A full-featured e-commerce platform with real-time inventory management and secure payments.
                         </p>
-                        <a href="#" class="text-blue-600 hover:text-blue-700">Learn More →</a>
+                        <div class="flex gap-4">
+                            <a href="#" style="background-color: #3b82f6;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
+                                <i class="fas fa-eye mr-2"></i>Demo
+                            </a>
+                            <a href="#" style="background-color: #4b5563;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="bg-white rounded-lg shadow overflow-hidden">
-                    <img src="/api/placeholder/400/300" alt="Project 2" class="w-full h-48 object-cover">
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden" style="transform: translateZ(0);">
+                    <div style="background: linear-gradient(135deg, #34d399 0%, #3b82f6 100%); height: 12rem;" class="flex items-center justify-center">
+                        <i class="fas fa-brain text-6xl text-white"></i>
+                    </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">AI Image Generator</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span style="background-color: #fef3c7; color: #d97706;" class="px-2 py-1 rounded-full text-sm">Python</span>
+                            <span style="background-color: #fee2e2; color: #dc2626;" class="px-2 py-1 rounded-full text-sm">TensorFlow</span>
+                            <span style="background-color: #e0e7ff; color: #4f46e5;" class="px-2 py-1 rounded-full text-sm">Flask</span>
+                        </div>
                         <p class="text-gray-600 mb-4">
-                            Description of your second project. What problems did it solve? What technologies did you use?
+                            An AI-powered tool that creates unique artwork based on text descriptions.
                         </p>
-                        <a href="#" class="text-blue-600 hover:text-blue-700">Learn More →</a>
+                        <div class="flex gap-4">
+                            <a href="#" style="background-color: #3b82f6;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
+                                <i class="fas fa-eye mr-2"></i>Demo
+                            </a>
+                            <a href="#" style="background-color: #4b5563;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="bg-white rounded-lg shadow overflow-hidden">
-                    <img src="/api/placeholder/400/300" alt="Project 3" class="w-full h-48 object-cover">
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden" style="transform: translateZ(0);">
+                    <div style="background: linear-gradient(135deg, #fb923c 0%, #ec4899 100%); height: 12rem;" class="flex items-center justify-center">
+                        <i class="fas fa-home text-6xl text-white"></i>
+                    </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Smart Home Dashboard</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span style="background-color: #e3f2fd; color: #1e88e5;" class="px-2 py-1 rounded-full text-sm">Vue.js</span>
+                            <span style="background-color: #e8f5e9; color: #43a047;" class="px-2 py-1 rounded-full text-sm">Firebase</span>
+                            <span style="background-color: #fff3e0; color: #fb923c;" class="px-2 py-1 rounded-full text-sm">IoT</span>
+                        </div>
                         <p class="text-gray-600 mb-4">
-                            Description of your third project. What problems did it solve? What technologies did you use?
+                            A responsive dashboard for managing smart home devices with real-time monitoring.
                         </p>
-                        <a href="#" class="text-blue-600 hover:text-blue-700">Learn More →</a>
+                        <div class="flex gap-4">
+                            <a href="#" style="background-color: #3b82f6;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
+                                <i class="fas fa-eye mr-2"></i>Demo
+                            </a>
+                            <a href="#" style="background-color: #4b5563;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -133,10 +183,13 @@
     </footer>
 
     <script>
+        // Initialize AOS
+        AOS.init();
+        
         // Update copyright year
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Smooth scrolling for anchor links
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
