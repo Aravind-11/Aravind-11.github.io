@@ -45,6 +45,8 @@
                 <div class="hidden md:flex items-center space-x-4">
                     <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
                     <a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a>
+                    <a href="#experience" class="text-gray-600 hover:text-gray-900">Experience</a>
+                    <a href="#education" class="text-gray-600 hover:text-gray-900">Education</a>
                     <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
                 </div>
             </div>
@@ -66,149 +68,66 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white">
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Featured Projects</h2>
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">About Me</h2>
+            <p class="text-gray-700 text-lg leading-relaxed text-center">
+                I am a passionate developer with expertise in creating innovative solutions using modern technologies.
+                With a strong background in web development, machine learning, and system design, I strive to deliver
+                impactful projects. My interests include AI, automation, and crafting intuitive user experiences.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Projects</h2>
             <div class="grid md:grid-cols-3 gap-6">
-                
-                <!-- Project 1 -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div style="background-color: #4F46E5;" class="h-48 flex items-center justify-center">
-                        <i class="fas fa-shopping-cart text-6xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="absolute top-4 right-4 bg-blue-500 text-white px-2 py-1 rounded text-sm">
-                            Featured
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">E-Commerce Platform</h3>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span style="background-color: #E3F2FD; color: #1E88E5;" class="px-2 py-1 rounded-full text-sm">React</span>
-                            <span style="background-color: #E8F5E9; color: #43A047;" class="px-2 py-1 rounded-full text-sm">Node.js</span>
-                            <span style="background-color: #F3E5F5; color: #8E24AA;" class="px-2 py-1 rounded-full text-sm">MongoDB</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            A full-featured e-commerce platform with real-time inventory management and secure payments.
-                        </p>
-                        <div class="flex gap-4">
-                            <a href="#" style="background-color: #3B82F6;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
-                                <i class="fas fa-eye mr-2"></i>Demo
-                            </a>
-                            <a href="#" style="background-color: #4B5563;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
-                                <i class="fab fa-github mr-2"></i>Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div style="background-color: #10B981;" class="h-48 flex items-center justify-center">
-                        <i class="fas fa-brain text-6xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">AI Image Generator</h3>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span style="background-color: #FEF3C7; color: #D97706;" class="px-2 py-1 rounded-full text-sm">Python</span>
-                            <span style="background-color: #FEE2E2; color: #DC2626;" class="px-2 py-1 rounded-full text-sm">TensorFlow</span>
-                            <span style="background-color: #E0E7FF; color: #4F46E5;" class="px-2 py-1 rounded-full text-sm">Flask</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            An AI-powered tool that creates unique artwork based on text descriptions.
-                        </p>
-                        <div class="flex gap-4">
-                            <a href="#" style="background-color: #3B82F6;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
-                                <i class="fas fa-eye mr-2"></i>Demo
-                            </a>
-                            <a href="#" style="background-color: #4B5563;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
-                                <i class="fab fa-github mr-2"></i>Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div style="background-color: #F59E0B;" class="h-48 flex items-center justify-center">
-                        <i class="fas fa-home text-6xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Smart Home Dashboard</h3>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span style="background-color: #E3F2FD; color: #1E88E5;" class="px-2 py-1 rounded-full text-sm">Vue.js</span>
-                            <span style="background-color: #E8F5E9; color: #43A047;" class="px-2 py-1 rounded-full text-sm">Firebase</span>
-                            <span style="background-color: #FFF3E0; color: #FB923C;" class="px-2 py-1 rounded-full text-sm">IoT</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            A responsive dashboard for managing smart home devices with real-time monitoring.
-                        </p>
-                        <div class="flex gap-4">
-                            <a href="#" style="background-color: #3B82F6;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
-                                <i class="fas fa-eye mr-2"></i>Demo
-                            </a>
-                            <a href="#" style="background-color: #4B5563;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
-                                <i class="fab fa-github mr-2"></i>Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+                <!-- Add Project Cards as needed (example is already in your code) -->
             </div>
         </div>
     </section>
 
-                <!-- Project 2 -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden" style="transform: translateZ(0);">
-                    <div style="background: linear-gradient(135deg, #34d399 0%, #3b82f6 100%); height: 12rem;" class="flex items-center justify-center">
-                        <i class="fas fa-brain text-6xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">AI Image Generator</h3>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span style="background-color: #fef3c7; color: #d97706;" class="px-2 py-1 rounded-full text-sm">Python</span>
-                            <span style="background-color: #fee2e2; color: #dc2626;" class="px-2 py-1 rounded-full text-sm">TensorFlow</span>
-                            <span style="background-color: #e0e7ff; color: #4f46e5;" class="px-2 py-1 rounded-full text-sm">Flask</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            An AI-powered tool that creates unique artwork based on text descriptions.
-                        </p>
-                        <div class="flex gap-4">
-                            <a href="#" style="background-color: #3b82f6;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
-                                <i class="fas fa-eye mr-2"></i>Demo
-                            </a>
-                            <a href="#" style="background-color: #4b5563;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
-                                <i class="fab fa-github mr-2"></i>Code
-                            </a>
-                        </div>
-                    </div>
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Experience</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800">Software Engineer</h3>
+                    <p class="text-gray-600">Tech Company - Jan 2023 to Present</p>
+                    <ul class="text-gray-700 list-disc ml-6 mt-2">
+                        <li>Developed scalable web applications using React and Node.js.</li>
+                        <li>Collaborated with cross-functional teams to design innovative solutions.</li>
+                    </ul>
                 </div>
-
-                <!-- Project 3 -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden" style="transform: translateZ(0);">
-                    <div style="background: linear-gradient(135deg, #fb923c 0%, #ec4899 100%); height: 12rem;" class="flex items-center justify-center">
-                        <i class="fas fa-home text-6xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Smart Home Dashboard</h3>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span style="background-color: #e3f2fd; color: #1e88e5;" class="px-2 py-1 rounded-full text-sm">Vue.js</span>
-                            <span style="background-color: #e8f5e9; color: #43a047;" class="px-2 py-1 rounded-full text-sm">Firebase</span>
-                            <span style="background-color: #fff3e0; color: #fb923c;" class="px-2 py-1 rounded-full text-sm">IoT</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            A responsive dashboard for managing smart home devices with real-time monitoring.
-                        </p>
-                        <div class="flex gap-4">
-                            <a href="#" style="background-color: #3b82f6;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
-                                <i class="fas fa-eye mr-2"></i>Demo
-                            </a>
-                            <a href="#" style="background-color: #4b5563;" class="px-4 py-2 text-white rounded-lg hover:opacity-90 transition flex items-center">
-                                <i class="fab fa-github mr-2"></i>Code
-                            </a>
-                        </div>
-                    </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800">Machine Learning Intern</h3>
+                    <p class="text-gray-600">AI Labs - Jun 2022 to Dec 2022</p>
+                    <ul class="text-gray-700 list-disc ml-6 mt-2">
+                        <li>Built predictive models to enhance customer engagement.</li>
+                        <li>Optimized deep learning pipelines for real-time data processing.</li>
+                    </ul>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Education</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800">Master's in Computer Science</h3>
+                    <p class="text-gray-600">University of Technology - 2021 to 2023</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800">Bachelor's in Computer Engineering</h3>
+                    <p class="text-gray-600">Institute of Technology - 2017 to 2021</p>
+                </div>
             </div>
         </div>
     </section>
